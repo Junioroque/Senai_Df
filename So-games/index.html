@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Só Games | Mundo Gamer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎮 SÓ GAMES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#novidades">Novidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-primary px-4" href="login.html">Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div id="carouselGamer" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselGamer" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselGamer" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselGamer" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active banner banner-1">
+          <div class="container banner-conteudo">
+            <h1>SEU MUNDO GAMER COMEÇA AQUI</h1>
+            <p>Equipamentos e acessórios para deixar seu setup completo.</p>
+          </div>
+        </div>
+        <div class="carousel-item banner banner-2">
+          <div class="container banner-conteudo">
+            <h1>TECNOLOGIA PARA JOGAR</h1>
+            <p>Mouse, teclado, headset e acessórios para suas partidas.</p>
+          </div>
+        </div>
+        <div class="carousel-item banner banner-3">
+          <div class="container banner-conteudo">
+            <h1>MONTE SEU SETUP</h1>
+            <p>Encontre os equipamentos que combinam com seu estilo.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGamer" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGamer" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+  </section>
+
+  <section id="destaques" class="secao">
+    <div class="container">
+      <h2 class="titulo-secao">OS MAIS VENDIDOS</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="card produto">
+            <img class="produto-imagem" src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80" alt="Monitor gamer">
+            <div class="card-body">
+              <h3 class="h5">Monitor Gamer</h3>
+              <p class="card-text">Tela de alta qualidade para seus jogos.</p>
+              <span class="preco">R$ 1.499,90</span>
+              <button class="btn btn-primary btn-comprar">Comprar</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card produto">
+            <img class="produto-imagem" src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80" alt="Teclado gamer">
+            <div class="card-body">
+              <h3 class="h5">Teclado Mecânico</h3>
+              <p class="card-text">Precisão e conforto para suas partidas.</p>
+              <span class="preco">R$ 399,90</span>
+              <button class="btn btn-primary btn-comprar">Comprar</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card produto">
+            <img class="produto-imagem" src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80" alt="Headset gamer">
+            <div class="card-body">
+              <h3 class="h5">Headset Gamer</h3>
+              <p class="card-text">Áudio imersivo para entrar no jogo.</p>
+              <span class="preco">R$ 299,90</span>
+              <button class="btn btn-primary btn-comprar">Comprar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="novidades" class="secao secao-clara">
+    <div class="container">
+      <h2 class="titulo-secao">NOVIDADES</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="novidade">
+            <span class="badge bg-primary mb-3">LANÇAMENTO</span>
+            <h3>Novos acessórios gamer</h3>
+            <p>Confira os novos produtos disponíveis na Só Games.</p>
+            <button class="btn btn-outline-primary" id="btn-novidades">Mostrar mensagem</button>
+            <div id="mensagem-novidades" class="mensagem mt-3"></div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="novidade">
+            <span class="badge bg-success mb-3">OFERTA</span>
+            <h3>Semana Gamer</h3>
+            <p>Produtos selecionados para completar seu setup.</p>
+            <a href="#destaques" class="btn btn-outline-success">Ver produtos</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="secao">
+    <div class="container">
+      <h2 class="titulo-secao">GALERIA</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3"><div class="galeria-item"><img class="galeria-img" src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=600&q=80" alt="Setup gamer"></div></div>
+        <div class="col-6 col-md-3"><div class="galeria-item"><img class="galeria-img" src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=600&q=80" alt="Computador gamer"></div></div>
+        <div class="col-6 col-md-3"><div class="galeria-item"><img class="galeria-img" src="https://images.unsplash.com/photo-1593118247619-e2d6f056869e?auto=format&fit=crop&w=600&q=80" alt="Controle gamer"></div></div>
+        <div class="col-6 col-md-3"><div class="galeria-item"><img class="galeria-img" src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=600&q=80" alt="Acessórios gamer"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <h3>Só GAMES</h3>
+    <p>Seu espaço para tecnologia e mundo gamer.</p>
+    <p class="mb-0">&copy; 2026 Só GAMES - Projeto acadêmico</p>
+  </div>
+</footer>
+
+<button id="voltar-topo" type="button" class="btn btn-primary" onclick="topo()">↑ Topo</button>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="js/jquery-script.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
